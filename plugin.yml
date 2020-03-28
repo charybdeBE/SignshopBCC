@@ -1,0 +1,13 @@
+name: SignShopBCC
+main: org.wargamer2010.ssbcc.SSBCC
+version: 1.0.0
+dev-url: http://dev.bukkit.org/server-mods/signshop
+depend: [SignShop, BCC]
+author: CharybdeBE
+api-version: 1.14
+commands:
+commands:
+  sbcc:
+    description: Commandes pour SignshopBCC
+    usage: /sbcc ajust compteEnBanque Item prix
+permissions:

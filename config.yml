@@ -1,0 +1,31 @@
+signs:
+  BCCBuy: takePlayerMoney,takeShopItems,giveBCCMoney,givePlayerItems
+  BCCSell: takeVariablePlayerItems,takeBCCMoney,giveShopItems,givePlayerMoney
+  BCCBuyU: takePlayerMoney,takeShopItems,giveBCCMoney,givePlayerItems,updatePrice
+  BCCSellU: takeVariablePlayerItems,takeBCCMoney,giveShopItems,givePlayerMoney,updatePrice
+messages:
+  setup:
+    BCCBuy: You have put !items for sale at a price of !price linked to account !account!
+    BCCSell: You have put a bounty of !price for !items linked to account !account!
+    BCCBuyU: You have put !items for sale at a price of !price linked to account !account!
+    BCCSellU: You have put a bounty of !price for !items linked to account !account!
+  confirm:
+    BCCBuy: Buy !items for !price?
+    BCCSell: Sell !items for !price?
+    BCCBuyU: Buy !items for !price?
+    BCCSellU: Sell !items for !price?
+  transaction:
+    BCCBuy: You have bought !items for !price!
+    BCCSell: You have sold !items for !price!
+    BCCBuyU: You have bought !items for !price!
+    BCCSellU: You have sold !items for !price!
+  transaction_owner:
+    BCCBuy: \!customer bought !items for !price from you. The money is on account !account!
+    BCCSell: \!customer sold you !items for !price. The money is on account !account!!
+  help:
+    BCCBuy: The Buy sign exchanges the customer's money for the chest\'s items.  The 2nd line contains the name fo the account.  The 3rd lines o this sign can say whatever you like, the price goes on the  4th.  Punch the chest(s) using !linkmaterial containing the type and amount  of items you want for a single transaction.
+    BCCSell: The Buy sign exchanges the customer's money for the chest\'s items.  The 2nd line contains the name fo the account.  The 3rd lines o this sign can say whatever you like, the price goes on the  4th.  Punch the chest(s) using !linkmaterial containing the type and amount  of items you want for a single transaction.
+errors:
+  account_not_found: The bank account does not exist
+  account_not_authorized: You don\'t have access to this account
+  account_empty: The buyer has not enough money
