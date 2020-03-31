@@ -1,7 +1,6 @@
 package org.wargamer2010.ssbcc.command;
 
 import be.charybde.bank.entities.Account;
-import org.bukkit.entity.Player;
 import org.wargamer2010.signshop.commands.ICommandHandler;
 import org.wargamer2010.signshop.player.SignShopPlayer;
 import org.wargamer2010.ssbcc.SSBCC;

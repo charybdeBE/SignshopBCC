@@ -150,7 +150,6 @@ public class SSBCC extends JavaPlugin {
     }
 
     public static void updateSign(String key, double price) {
-//        String keyI = key.replace(".", "-");
         Storage.get().getShopsWithMiscSetting("BCCU", key).forEach((b) -> {
             Seller seller = Storage.get().getSeller(b.getLocation());
             if (seller.getMisc("BCCU").equalsIgnoreCase(key)) {
@@ -163,10 +162,10 @@ public class SSBCC extends JavaPlugin {
                     nrStack += is.getAmount();
                 }
                 double newPrice = price * (nrStack / seller.getItems()[0].getMaxStackSize()) * modif;
-                newPrice = Math.round(newPrice * 100.0) / 100.0;
                 if (newPrice <= 1.0 * modif) {
                     newPrice = 1.0 * modif;
                 }
+                newPrice = Math.round(newPrice * 100.0) / 100.0;
 
                 Sign s = (Sign) b.getState();
                 s.setLine(3, Double.toString(newPrice));

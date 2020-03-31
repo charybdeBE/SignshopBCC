@@ -1,14 +1,12 @@
 package org.wargamer2010.ssbcc;
 
 import be.charybde.bank.entities.Account;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerChatEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.block.Sign;
@@ -51,7 +49,6 @@ public class SignShopPlumeListener implements Listener {
                 sign.update();
                 event.getPlayer().sendMessage("Prix mis a jour");
             } catch (Exception e) {
-                System.out.println(e);
                 event.getPlayer().sendMessage("Erreur de prix");
             }
             hashmap.remove(event.getPlayer());

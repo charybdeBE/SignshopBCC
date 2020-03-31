@@ -24,7 +24,6 @@ public class UpdateTime implements Runnable {
     }
 
     public void run() {
-        System.out.println("Its RSCH Time");
         HashMap<String, Double> capacity = new HashMap<>();
         HashMap<String, Double> contains = new HashMap<>();
 
